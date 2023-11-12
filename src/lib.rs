@@ -3,7 +3,5 @@ use autocxx::prelude::*;
 include_cpp! {
     #include "MyClass.h"
     safety!(unsafe_ffi)
-    subclass!("MyClass", MySubclass)
+    generate!("MyClass")
 }
-
-pub struct MySubclass {}
